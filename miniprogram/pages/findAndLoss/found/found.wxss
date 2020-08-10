@@ -1,0 +1,9 @@
+/* miniprogram/pages/found/found.wxss */
+page{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background:rgba(237,241,245,1);
+  opacity:1;
+}

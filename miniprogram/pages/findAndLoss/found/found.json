@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "category": "../../../components/category/category",
+    "infocard": "../../../components/infoCard/infoCard"
+  },
+  "navigationBarTitleText": "寻物启事"
+}

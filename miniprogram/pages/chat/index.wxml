@@ -1,0 +1,32 @@
+<!-- written by 陆张驰 -->
+
+<view class="historycon" hidden="{{!hidden}}">
+<view class='alert' hidden="{{!hidden}}">
+    <view>{{headInfo}}</view>
+</view>
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" class="history">
+     <block wx:key wx:for='{{messageList}}'>
+        <view wx:if="{{item.isYours}}" style='display: flex; justify-content: flex-end; padding: 2vw 2vw 2vw 11vw;'>
+          <view class='rightMsg'>{{item.content}}</view>
+        </view>
+        <view wx:else style='display: flex; padding: 2vw 11vw 2vw 2vw;'>
+          <view class='leftMsg'>{{item.content}}</view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+<view class='alert' hidden="{{!hidden}}">
+    <view>{{tailInfo}}</view>
+</view>
+<view>
+    <loading hidden="{{hidden}}">
+        正在随机挑选一位陌生人……
+    </loading>
+</view>
+<view>
+  <view class="sendmessage" hidden="{{!hidden}}">
+    <input id="message"  value="{{message}}"
+     bindinput="getInput"></input>
+    <button bindtap="add">发送</button>
+  </view>
+</view> 

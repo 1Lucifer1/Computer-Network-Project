@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "love-category": "../../../components/love-category/love-category",
+    "love-info": "../../../components/love-info/love-info"
+  },
+  "navigationBarTitleText": "树洞"
+}

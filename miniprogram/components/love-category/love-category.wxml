@@ -1,0 +1,8 @@
+<!-- components/category/category.wxml -->
+<view class="navbar">
+    <block wx:for="{{tabs}}" wx:key="index">
+        <view id="{{index}}" catchtap="tabClick" class="navbar__item {{activeIndex == index ? 'bar__item_on' : ''}}">
+            <view class="navbar__title">{{item}}</view>
+        </view>
+    </block>
+</view>

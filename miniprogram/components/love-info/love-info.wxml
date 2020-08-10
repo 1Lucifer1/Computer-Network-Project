@@ -1,0 +1,27 @@
+<!-- components/infoCard/infoCard.wxml -->
+<block wx:for="{{releaseInfo}}" wx:key="index" wx:for-item="releaseItem">
+  <view class="infoCard">
+    <view class="cardContent" id="text-expander">
+      <!-- 点击展开 bindtap="textExpander" -->
+      <view class="text-expander__content {{textExpa == false ? 'close' : ''}} ">
+        {{releaseItem.releaseText}}
+      </view>
+    </view>
+    <view class="{{releaseItem.releaseImg.length > 0 ? 'cardImgs' : ''}}">
+      <block wx:for="{{releaseItem.releaseImg}}" wx:key="index">
+        <view class="imgItem" bindtap="previewImage" id="{{item}}">
+          <image src="{{item}}" alt="" mode="scaleToFill" />
+        </view>
+      </block>
+    </view>
+    <view class="cardFoot">
+      <view class="foot footAvatar">
+        <image src="{{releaseItem.createBy.avatarUrl}}" alt="" />
+      </view>
+      <view class="foot footTime">{{releaseItem.createTime}}</view>
+      <view class="foot footCall">
+        <image src="{{callIcon}}" alt="" />
+      </view>
+    </view>
+  </view>
+</block>

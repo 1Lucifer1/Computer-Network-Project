@@ -1,0 +1,14 @@
+<!--miniprogram/pages/index/recently/recently.wxml-->
+<scroll-view scroll-y="true" class="container notify withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="collection">
+    <view class="notify-item flex-wrp">
+      <view class="avatar flex-item">
+        <image src="../../../images/recent.png"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">标题标题标题</text>
+        <text class="notify-title">出一台switch，2000r可刀</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

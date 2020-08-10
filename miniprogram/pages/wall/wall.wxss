@@ -1,0 +1,135 @@
+/**index.wxss**/
+.container{
+  height: 1500rpx;
+}
+.introduction{ 
+  margin-top:40%; 
+  display:flex; 
+  flex-direction:row; 
+  align-items:center; 
+  /* justify-content:center; */ 
+  background-color:#504f37; 
+} 
+.introduction_text{ 
+  padding-top:0%; 
+  margin-top:0%; 
+  margin-bottom: 10%; 
+  margin-left: 10%; 
+  /* justify-content: center; */ 
+  font-family: STHeiti Light[STXihei]; 
+  color:#637d3c; 
+  /* background-color:#504f37; */ 
+} 
+.btn-group{ 
+  background:#504f37; 
+  size:mini; 
+} 
+.btn-release{ 
+  background:#504f37; 
+  size:mini; 
+} 
+.container .search-left{
+  flex: 8;
+  background: #d5cfb3;
+  text-align: left;
+}
+.container .search-left input{
+  display: inline-block;
+  height: 65rpx;
+  font-size: 26rpx;
+}
+.container .search .search-right{
+  flex: 1;
+}
+.title{
+  margin-top:10%;
+  padding-top:0;
+  font-family: cursive;
+  font-size:20px;
+  display:flex;
+  color: #817956;
+  text-align:center;
+  background-color: #d5cfb3;
+  justify-content: center;
+}
+.search-placeholder{
+  color: #504f37;
+  line-height: 20rpx;
+}
+.search{
+  width: 735rpx;
+  height: 65rpx;
+  padding: 12.5rpx 0 12.5rpx 15rpx;
+  background: #504f37;
+}
+.detail{
+  background-color: white;
+}
+.detailDecorate{
+  color: #504f37;
+  font-family: cursive;
+}
+
+/* .center{
+  text-align:center;
+} */
+.card{
+  /* background-image: url("http://i.shuotu.vip/n=IMG_0304(20200120-113406).JPG/p=hA2ThoENrqF4]"); */
+  width: 100%;
+  height:100%;
+  background-size:100%,100%; 
+  border-radius:10%;
+}
+.cardText{
+  background-image: url("http://i.shuotu.vip/n=IMG_0304(20200120-113406).JPG/p=hA2ThoENrqF4]");
+  color: white;
+  font-family: cursive;
+  justify-content: center;
+  white-space: pre-line;
+  line-height:120%;
+  padding:20% 10% 20% 3%;
+  width:97%;
+  background-size:100%,100%;
+}
+.container{
+  padding: 0;
+}
+#app .btn-group {
+    position: fixed;
+    bottom: 45rpx;
+    right: 60rpx; }
+    #app .btn-group button {
+      -webkit-box-shadow: 6rpx 1rpx 6rpx rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 6rpx 1rpx 6rpx rgba(0, 0, 0, 0.3);
+      box-shadow: 6rpx 1rpx 6rpx rgba(0, 0, 0, 0.3);
+      margin: 0;
+      padding: 0; }
+    #app .btn-group .btn-release {
+      margin-bottom: 30rpx;
+      height: 100rpx;
+      font-size: 0;
+      color: white;
+      background-color: #F01905; }
+      #app .btn-group .btn-release .icon {
+        font-weight: 100;
+        line-height: 100rpx;
+        font-size: 50rpx;
+        width: 100rpx;
+        height: 100rpx; }
+    .btn-group .btn-top {
+      -webkit-box-shadow: 6rpx 1rpx 6rpx rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 6rpx 1rpx 6rpx rgba(0, 0, 0, 0.2);
+      box-shadow: 6rpx 1rpx 6rpx rgba(0, 0, 0, 0.2);
+      height: 100rpx; }
+    .btn-group .btn-top .icon-top {
+        font-weight: bold;
+        line-height: 100rpx;
+        font-size: 50rpx;
+        display: inline-block;
+        width: 100rpx;
+        height: 100rpx;
+        background-color: white;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        color: #F01905; }

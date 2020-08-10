@@ -1,0 +1,11 @@
+<!--miniprogram/pages/found/found.wxml-->
+<view class="navbar">
+  <scroll-view scroll-x="{{true}}">
+    <category tabs="{{['全部','证件','书籍文具','电子设备','生活用品','其他']}}" catch:onTitleChange="onTitleChange"></category>
+  </scroll-view>
+</view>
+<view class="foundContent">
+  <view class="inforCards">
+    <infocard id="infoCard" class="infoCard" releaseInfo="{{releaseInfo}}"></infocard>
+  </view>
+</view>

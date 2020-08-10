@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "love-category": "../../../components/love-category/love-category",
+    "love-input": "../../../components/love-input/love-input"
+  },
+  "navigationBarTitleText": "发布"
+}

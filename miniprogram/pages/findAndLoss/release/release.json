@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "category":"../../../components/category/category",
+    "inputdetail": "../../../components/inputDetail/inputDetail"
+  },
+  "navigationBarTitleText": "发布"
+}

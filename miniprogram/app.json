@@ -1,0 +1,86 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/wall/wall",
+    "pages/findAndLoss/findAndLoss",
+    "pages/index/collection/collection",
+    "pages/index/recently/recently",
+    "pages/index/my_draft/my_draft",
+    "pages/index/my/my",
+    "pages/findAndLoss/found/found",
+    "pages/findAndLoss/lost/lost",
+    "pages/findAndLoss/release/release",
+    "pages/release/release",
+    "pages/canlendar/canlendar",
+    "pages/hole/hole",
+    "pages/confession/confession",
+    "pages/home/home",
+    "pages/me/me",
+    "pages/message/message",
+    "pages/publish/publish",
+    "pages/ispublish/ispublish",
+    "pages/search/search",
+    "pages/product_detail/product_detail",
+    "pages/product01_detail/product01_detail",
+    "pages/need/need",
+    "pages/mobile_digital/mobile_digital",
+    "pages/sport/sport",
+    "pages/life/life",
+    "pages/book/book",
+    "pages/free/free",
+    "pages/other/other",
+    "pages/feedback/feedback",
+    "pages/isneed/isneed",
+    "pages/waspublish/waspublish",
+    "pages/wasneed/wasneed",
+    "pages/chat/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Demo",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+
+    "color": "#626567",
+    "selectedColor": "#868e37",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "集市",
+        "iconPath": "images/market1.png",
+        "selectedIconPath": "images/market.png"
+      },
+      {
+        "pagePath": "pages/wall/wall",
+        "text": "万事屋",
+        "iconPath": "images/love2.png",
+        "selectedIconPath": "images/love.png"
+      },
+      {
+        "pagePath": "pages/findAndLoss/findAndLoss",
+        "text": "招领箱",
+        "iconPath": "images/findorlost.png",
+        "selectedIconPath": "images/findorlost1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/mynew.png",
+        "selectedIconPath": "images/mynew1.png"
+      },
+      {
+        "pagePath": "pages/chat/index",
+        "text": "匿名聊天",
+        "iconPath": "images/chat.png",
+        "selectedIconPath": "images/chat.png"
+      }
+    ]
+  }
+}

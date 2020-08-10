@@ -1,0 +1,45 @@
+<!-- miniprogram/pages/release/release.wxml-->
+<!-- <form bindsubmit="formSubmit">
+ <view class="add-text" style="margin-top:10%;margin-left:10%;margin-right:10%;font-family: cursive;font-size: 50rpx;">
+   <textarea bindblur="bindTextAreaBlur" placeholder-placeholder-style="font-size: 50rpx;" auto-height placeholder="标题" value="{{inputVal.title}}" />
+  </view>
+</form> -->
+<!-- <view>
+ <text style="color:#b2b2b2;font-size:40rpx;font-family: cursive;":>
+  表白
+ </text>
+</view>
+<text style="color:#b2b2b2">
+————————————————————————————————————————————————————————
+</text>
+<form bindsubmit="formSubmit">
+ <view class="add-text" style="margin-top:10%;margin-left:20%;margin-right:10%;margin-bottom=50%;font-family: cursive;">
+   <textarea bindblur="bindTextAreaBlur" placeholder-placeholder-style="font-size: 30rpx;" auto-height placeholder="在这里填写你的表白内容..." value="{{inputVal}}" />
+  </view>
+  <text style="color:#b2b2b2;margin-top=20%;position: absolute;top: 500rpx;">
+————————————————————————————————————————————————————————
+</text>
+  <view class="insert-button" style="margin-top:15%">
+   <button formType="submit" class="detail">
+   <!-- <image src="../../images/buttonPic.png" style="mode:aspectFit;width:10px;height:10px;" /> -->
+   <!-- <text class="detailDecorate" style="margin-top:10%">—扔小纸条—</text> -->
+   <!-- <image src="../../images/buttonPic.png" style="mode:aspectFit;width:10px;height:10px;" /> -->
+   <!-- </button>
+  </view>
+</form> --> 
+<!-- <text style="color:#b2b2b2;">
+————————————————————————————————————————————————————————
+</text> -->
+<view class="releaseView">
+  <view class="navbar">
+    <love-category catch:onTitleChange="onTitleChange" tabs="{{tabs}}"></love-category>
+  </view>
+  <!-- 输入拾物品信息 上传照片 选择分类 联系方式 -->
+  <view class="input">
+    <love-input id="inputDetail"
+    foundOrLost="{{foundOrLost[clickStatus]}}"></love-input>
+  </view>
+  <button class="btnRelease userinfo-nickname" bindtap="checkUploadForm">
+    发布
+  </button>
+</view>

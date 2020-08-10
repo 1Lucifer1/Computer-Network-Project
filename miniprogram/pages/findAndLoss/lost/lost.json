@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "category": "../../../components/category/category",
+    "infocard": "../../../components/infoCard/infoCard"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "失物招领"
+}

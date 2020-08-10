@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<view class="search flex-wrp">
+      <view class="search-left flex-item">
+          <image src="../../images/search.png" style="mode:aspectFit;width:20px;height:20px;display: inline-block;"></image>
+          <input placeholder="搜索关键字，寻找小纸条" placeholder-class="search-placeholder"/>
+          <!-- <view class="search-right flex-item" style="mode:aspectFit;width:20px;height:20px;display: inline-block;">
+          
+          <image src="/pic/refresh.png"></image> -->
+          <!--</view> -->
+
+      </view>
+      <!-- <view class="search-right flex-item" bindtap="upper">
+          <image src="../../images/lighting.png"></image>
+      </view> -->
+  </view>
+<image src="../../images/titlePic.jpg" style="mode:widthFix;width:100%;border-bottom-left-radius:20rpx;border-bottom-right-radius:20rpx;"></image> 
+
+
+<view class="intruoduction" bindtap="torelease"> 
+     
+     <image src="../../images/release.png" style="width:65rpx;height:60rpx;margin-left:15%;margin-top:10%;background-color:#27321f;border-radius:50rpx;"></image> 
+     <text class="introduction_text">点击发布我的表白...</text> 
+     
+</view> 
+<view class="intruoduction" bindtap="todateTag"> 
+     
+     <image src="../../images/canlendar.png" style="width:65rpx;height:65rpx;margin-left:15%;margin-top:10%;background-color:#27321f;border-radius:50rpx;"></image> 
+     <text class="introduction_text">点击查看今日日签...</text> 
+     
+</view> 
+<view class="intruoduction" bindtap="todetails"> 
+     
+     <image src="../../images/clover.png" style="width:65rpx;height:65rpx;margin-left:15%;margin-top:10%;background-color:#27321f;border-radius:50rpx;"></image> 
+     <text class="introduction_text">点击查看表白列表...</text> 
+     
+</view> 
+<view class="intruoduction" bindtap="tohole"> 
+     
+     <image src="../../images/secretkey.png" style="width:65rpx;height:65rpx;margin-left:15%;margin-top:10%;background-color:#27321f;border-radius:50rpx;"></image> 
+     <text class="introduction_text">点击查看树洞列表...</text> 
+     
+</view> 
+</scroll-view>

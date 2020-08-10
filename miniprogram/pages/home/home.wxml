@@ -1,0 +1,107 @@
+<view class="home-search-bar">
+	<view class="home-search-bar__form">
+		<!-- 搜索框 -->
+		<view class=".home-search-bar__box ">
+			<icon class="home-icon-search_in-box" type="search" size="14"></icon>
+			<input type="text" class="home-search-bar__input" placeholder="请输入搜索内容" bindblur="nameinput" value="{{nameinput}}" />
+		</view>
+	</view>
+	<!-- 搜索按钮,调用搜索查询方法 -->
+	<view class="home-search-bar__cancel-btn" bindtap='search_name'>搜索</view>
+</view>
+
+<swiper class="content-info-slide" indicator-color="fgba(255,255,255,.5)" indicator-active-color="#fff" indicator-dots circular autoplay>
+	<swiper-item>
+		<image src="../../icon/1.png"></image>
+	</swiper-item>
+	<swiper-item>
+		<image src="../../icon/2.jpg"></image>
+	</swiper-item>
+</swiper>
+
+
+<!-- 分类区 -->
+<view class="">
+	<view class="optional_bar">
+		<view bindtap="tomobile_digital">
+			<image src="../../icon/手机.jpg"></image>
+			<text class="text_style">手机数码</text>
+		</view>
+		<view bindtap="tosport">
+			<image src="../../icon/运动.jpg"></image>
+			<text class="text_style">运动休闲</text>
+		</view>
+		<view bindtap="tolife">
+			<image src="../../icon/生活.jpg"></image>
+			<text class="text_style">生活用品</text>
+		</view>
+	</view>
+
+	<view class="optional_bar">
+		<view bindtap="tobook">
+			<image src="../../icon/书籍.jpg"></image>
+			<text class="text_style">书籍资料</text>
+		</view>
+		<view bindtap="tofree">
+			<image src="../../icon/免费.jpg"></image>
+			<text class="text_style">免费区</text>
+		</view>
+		<view bindtap="toother">
+			<image src="../../icon/其他.jpg"></image>
+			<text class="text_style">其他</text>
+		</view>
+	</view>
+</view>
+
+
+<view class="recommend-bar">
+  <text decode="true">&nbsp;&nbsp;推荐</text>
+</view>
+
+<!-- 商品展示栏 -->
+<view class="content-list" bindtap="toproduct" wx:for="{{second_data}}" wx:key="{{index}}" id="{{item._id}}">
+	<view class="content-list-top"></view>
+	<view class="list-item">
+		<image src="{{item.images_fileID[0]}}"></image>
+	</view>
+
+	<!-- 标题 -->
+	<view class="title-left">{{item.sell_title}}</view>
+
+	<!-- 价格 -->
+	<view class="press_style">
+		<text decode="true" style="color:red">￥&nbsp;{{item.sell_press}}</text>
+	</view>
+</view>
+<view class="more">
+	<view bindtap="homeTap">
+		<view class="item">
+			<image class="image" src="../../icon/home01.png"></image>
+			<text class="value">首页</text>
+		</view>
+	</view>
+	<view bindtap="needTap">
+		<view class="item">
+			<image class="image" src="../../icon/free01.png"></image>
+			<text class="value">需求</text>
+		</view>
+	</view>
+  <view bindtap="publishTap">
+		<view class="item">
+			<image class="image" src="../../icon/publish01.png"></image>
+			<text class="value">发布</text>
+		</view>
+	</view>
+  <view bindtap="interestingTap">
+		<view class="item">
+			<image class="image" src="../../icon/interesting01.png"></image>
+			<text class="value">收藏</text>
+		</view>
+	</view>
+  <view bindtap="meTap">
+		<view class="item">
+			<image class="image" src="../../icon/me01.png"></image>
+			<text class="value">个人</text>
+		</view>
+	</view>
+</view>

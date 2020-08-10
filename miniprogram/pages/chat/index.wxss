@@ -1,0 +1,69 @@
+/* written by 陆张驰 */
+
+.sendmessage {
+  display: flex;
+  flex-direction:row;
+  border:1px solid #aaaaaa;
+  position: fixed;
+  width:100%;
+  bottom: 0px;
+}
+
+.sendmessage input { 
+  width:80%;
+  height:40px;
+  line-height : 40px ;
+  font-size : 14px ;
+  padding-left:10px;
+}
+.sendmessage button {
+  border : 1px solid #ffffff ;
+  width : 25% !important;
+  height : 40px ;
+  background : #000000 ;
+  color : #ffffff ;
+  line-height : 20px ;
+  font-size : 13px ;
+  text-align: center !important;
+}
+
+.historycon {
+  height: 90%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  margin-top: 100rpx;
+  border-top: 0px;
+}
+
+.leftMsg {
+  font-size: 30rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #96EB6A;
+  margin-left: 1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+}
+
+.rightMsg {
+  font-size: 30rpx;
+  color: #444;
+  line-height: 7vw;
+  padding: 2vw 2.5vw;
+  background-color: #96EB6A;
+  margin-right: 1.6vw;
+  border-radius: 10rpx;
+  z-index: 10;
+}
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  width: 100%;
+  height: 100%;
+  font-size: 28rpx;
+  color: #aaaaaa;
+}

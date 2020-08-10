@@ -1,0 +1,5 @@
+<view class="lostContent">
+  <view class="inforCards">
+    <love-info id="infoCard" class="infoCard" releaseInfo="{{releaseInfo}}"></love-info>
+  </view>
+</view>

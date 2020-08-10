@@ -1,0 +1,14 @@
+<!-- miniprogram/pages/release/release.wxml -->
+<view class="releaseView">
+  <view class="navbar">
+    <category catch:onTitleChange="onTitleChange" tabs="{{tabs}}"></category>
+  </view>
+  <!-- 输入拾物品信息 上传照片 选择分类 联系方式 -->
+  <view class="input">
+    <inputdetail id="inputDetail"
+    foundOrLost="{{foundOrLost[clickStatus]}}"></inputdetail>
+  </view>
+  <button class="btnRelease userinfo-nickname" bindtap="checkUploadForm">
+    发布
+  </button>
+</view>

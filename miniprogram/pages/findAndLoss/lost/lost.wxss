@@ -1,0 +1,10 @@
+/* miniprogram/pages/lost/lost.wxss */
+/* .navbar__title{ font-size:28rpx;} */
+page{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background:rgba(237,241,245,1);
+  opacity:1;
+}

@@ -1,0 +1,25 @@
+/* components/love-category/love-category.wxss */
+.navbar{
+    display:flex; 
+    z-index:500;
+    width: 100%;
+    
+  }
+  .navbar__item{
+    display:inline-block;
+    padding:24rpx 25rpx;
+    box-sizing: border-box;
+    border-bottom:1rpx solid #ccc;
+    width: 100%;
+    background:rgba(255,255,255,1);
+  }
+  .bar__item_on{
+    color:#1768AC;
+    border-bottom: 4rpx solid #1768AC;
+  }
+  .navbar__title{
+    letter-spacing: 4rpx;
+    font-size:32rpx;
+    text-align:center;
+    white-space:nowrap;
+  }

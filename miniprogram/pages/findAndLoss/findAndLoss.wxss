@@ -1,0 +1,34 @@
+/* pages/findAndLoss/findAndLoss.wxss */
+.my{
+  margin: 15rpx 0 0 0;
+  border-top: solid 1px #ebebeb;
+  border-bottom: solid 2px #ebebeb;
+}
+.my .my-item{
+  width: 750rpx;
+  background: #ffffff;
+  padding: 0;
+}
+.my .my-item .myitem-icon{
+  flex: 1;
+}
+.my .my-item .myitem-icon image{
+  width: 55rpx;
+  height: 55rpx;
+  padding: 37.5rpx 0;
+  
+
+}
+.my .my-item .myitem-name{
+  flex: 5;
+  text-align: left;
+  font-size: 32rpx;
+  font-family: STHeiti Light [STXihei];
+  color: #6d6d6d;
+  line-height: 60rpx;
+  padding: 30rpx 0;
+  border-bottom: solid 1px #ebebeb;
+}
+.my .my-item:last-child .myitem-name{
+  border-bottom: none;
+}

@@ -1,0 +1,24 @@
+<!--miniprogram/pages/index/my/my.wxml-->
+<view class="container my">
+ <view class="image">
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+ </view>
+ <view class="text-info">
+ <view class="info">
+   <text class="title">昵称：</text>
+   <text class="value">{{userInfo.nickName}}</text>
+  </view>
+  <view class="info">
+   <text class="title">浏览数：</text>
+   <text class="value">123</text>
+  </view>
+  <view class="info">
+   <text class="title">收藏数：</text>
+   <text class="value">12</text>
+  </view>
+  <view class="info">
+   <text class="title">草稿数：</text>
+   <text class="value">1</text>
+  </view>
+  </view>
+</view>

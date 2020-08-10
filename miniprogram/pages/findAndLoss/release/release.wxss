@@ -1,0 +1,18 @@
+/* miniprogram/pages/release/release.wxss */
+.btnRelease{
+  margin-top:150rpx;
+  width:670rpx;
+  height:94rpx;
+  background:rgb(75, 201, 163);
+  border:2px solid rgba(5,5,5,0.08235294117647057);
+  opacity:1;
+  border-radius:20rpx;
+  color: #FFFFFF;
+}
+
+
+.weui-cell_switch{
+  padding-top:6px;
+  padding-bottom:6px
+}
+

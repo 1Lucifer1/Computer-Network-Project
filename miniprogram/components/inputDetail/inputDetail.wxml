@@ -1,0 +1,57 @@
+<!-- components/inputDetail/inputDetail.wxml -->
+<view class="lost-found__info">
+  <view class="releaseInfo">
+    <!-- 输入详细 -->
+    <view class="infoInput">
+      <view class="inputDetail">
+        <view class="inputDetail__bd">
+          <textarea bindinput="onInputChange" class="detail-textarea" placeholder="{{foundOrLost}}" 
+          value="{{releaseText}}" style="height: 220rpx" />
+          <!-- data-clickStatus="{{clickStatus}}"  -->
+        </view>
+      </view>
+    </view>
+    <!-- 上传照片 -->
+    <view class="uploadImg">
+      <view class="uploader">
+        <view class="uploader__files" id="uploaderFiles">
+          <block wx:for="{{imgLocalPath}}" wx:key="*this">
+            <view class="uploader__file" bindtap="previewImage" id="{{item}}">
+              <image class="uploader__img" src="{{item}}" mode="aspectFill" />
+            </view>
+          </block>
+        </view>
+        <view wx:if="{{imgLocalPath.length < 6}}" class="uploader__input-box">
+          <view class="uploader__input" bindtap="chooseImage"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 选择分类 -->
+  <view class="thingType">
+    <view class="">
+      <view class="typeTitle">选择分类</view>
+    </view>
+    <view class="typeCon">
+      <picker bindchange="bindtypeChange" value="{{typeIndex}}" range="{{type}}">
+        <view class="typeName">{{type[typeIndex]}}</view>
+      </picker>
+    </view>
+  </view>
+  <!-- 输入联系方式 -->
+  <view class="thingType releaseCon">
+    <view class="">
+      <view class="typeTitle">联系方式</view>
+    </view>
+    <view class="inputCon">
+      <input bindinput="onInputCall" value="{{releaseCall}}" class="conNum" placeholder="请输入qq或手机号" />
+    </view>
+  </view>
+  <!-- 授权提醒 -->
+  <view class="thingType weui-cells_after-title">
+    <view class="typeTitle">当发布收到回复则提醒</view>
+    <view class="switchOn">
+      <switch bindchange="switchChange" checked="{{releaseRemind}}" />
+    </view>
+  </view>
+</view>

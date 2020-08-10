@@ -1,0 +1,99 @@
+/* components/infoCard/infoCard.wxss */
+page{
+  margin: 0;
+  padding: 0;
+}
+.infoCard{
+  width: 670rpx;
+  margin: 40rpx;
+  background:rgba(255,255,255,1);
+  opacity:1;
+  border-radius:20rpx;
+}
+.cardContent{
+  padding: 40rpx 40rpx 0rpx 40rpx;
+}
+.text-expander__content{
+  font-size:28rpx;
+  width:590rpx; 
+}
+.text-expander__content.close{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.text-expander__button{
+  height: 40rpx;
+  display: flex;
+  justify-content: center; 
+}
+.text-expander__button.displayNone{
+  display: none;
+}
+.icon-chevron__down{
+  width: 20rpx;
+  height: 20rpx;
+  border: 1rpx solid #aaa;
+  transform: rotateZ(45deg);
+  border-width: 0 1rpx 1rpx 0;
+  box-sizing: border-box;
+  transition: transform .5s;
+}
+.icon-chevron__down.up{
+  transform: rotateZ(-135deg);
+  margin-top: 10rpx;
+}
+.imgItem{
+  width: 180rpx;
+  height: 180rpx;  
+  float: left;
+  border-radius:10rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+.imgItem image{
+  width: 100%;
+  height: 100%;
+  border-radius:10rpx; 
+}
+.cardFoot{
+  width: 590rpx;
+  height: 60rpx;
+  padding: 20rpx 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.footAvatar{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.footAvatar image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+}
+.footCall{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+}
+.footCall image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.footTime{
+  height:28rpx;
+  padding-top: 14rpx; 
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  line-height:28rpx;
+  color:rgba(136,136,136,1);
+  opacity:1;  
+}

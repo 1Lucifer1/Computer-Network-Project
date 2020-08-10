@@ -1,0 +1,2 @@
+<!--miniprogram/pages/canlendar/canlendar.wxml-->
+<image src="../../images/dateTag.png" style="mode:widthFix;width:100%;"></image>
